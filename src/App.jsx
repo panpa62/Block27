@@ -5,12 +5,12 @@ import SignUpForm from './components/SignUpForm'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [token, setToken] = useState(null)
 
   return (
     <>
-      <Authenticate />
-      <SignUpForm />
+      <Authenticate token={token} />
+      <SignUpForm setToken={setToken} />
     </>
   )
 }
